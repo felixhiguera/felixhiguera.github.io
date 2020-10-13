@@ -1,0 +1,173 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: minmax(auto, 1024px);
+    justify-content: center;
+}
+
+.top {
+    display: grid;
+    grid-template-columns: 150px 1fr 200px;
+    grid-template-areas: "logo finder profile";
+}
+
+@media screen and (max-width:650) {
+    .top {
+        grid-template-columns: 150px 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "logo logo" "profile profile";
+    }
+    .images-cine {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 5px;
+        justify-items: center;
+        grid-template-areas: "image-cine" "image-cine""images-cine";
+    }
+}
+
+.logo {
+    grid-area: logo;
+    display: flex;
+}
+
+.finder {
+    grid-area: finder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.finder input {
+    height: 30px;
+    width: 300px;
+    border: 1px solid #d1d0d3;
+    border-radius: 5px;
+}
+
+.profile {
+    grid-area: profile;
+    display: flex;
+    align-items: center;
+}
+
+.top .logo h1 {
+    font-family: 'Monoton', cursive;
+    color: red;
+    width: 100px;
+    height: 50px;
+}
+
+.img-logo img {
+    width: 60px;
+    height: 50px;
+    margin-top: 15px;
+}
+
+.profile h1 {
+    font-size: 20px;
+    font-family: 'Comic Neue', cursive;
+}
+
+.profile-photo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+}
+
+.side {
+    background-color: #fd6766;
+    border: 1px solid black;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    color: white;
+    justify-items: center;
+}
+
+.card-movies {
+    border-top: 5px solid gray;
+}
+
+.side .ajustes {
+    grid-row: 7/8;
+}
+
+.icons i {
+    color: white;
+}
+
+.card-movies h1 {
+    font-family: 'Comic Neue', cursive;
+    font-size: 1.2rem;
+}
+
+.images-cine {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "image-cine" "image-cine" "image-cine";
+    grid-gap: 5px;
+    justify-items: center;
+}
+
+.one {
+    grid-area: image-cine;
+}
+
+.two {
+    grid-area: image-cine;
+}
+
+.three {
+    grid-area: image-cine;
+}
+
+.photo img {
+    width: 200px;
+    height: 150px;
+}
+
+.images-critica {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px;
+    justify-items: center;
+}
+
+.images-noperder {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px;
+    justify-items: center;
+}
+
+.title {
+    margin-left: 45px;
+}
+
+.icons {
+    align-self: center;
+}
+
+.icons a {
+    align-self: center;
+    margin-left: 20px;
+}
+
+.title-icons {
+    align-self: center;
+    padding: 0;
+    margin: 0;
+}
