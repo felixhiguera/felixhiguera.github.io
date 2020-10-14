@@ -13,13 +13,13 @@
     body {
         margin: 0;
         height: 100%;
-        overflow: hidden;
     }
     
     .margin {
         background-color: #000000;
         width: auto;
         height: 10px;
+        margin: 0px;
     }
     
     .hero {
@@ -37,6 +37,12 @@
         grid-template-columns: 70% 1fr;
         padding-top: 0px;
         max-width: 900px;
+    }
+    
+    .header a img:hover,
+    .header i:hover,
+    .header h1:hover {
+        transform: scale(1.1);
     }
     
     .menuheader {
@@ -108,46 +114,6 @@
         border-radius: 50%;
     }
     /* responsive for phones  */
-    
-    @media (max-width:650px) {
-        .header {
-            display: flex;
-            justify-content: center;
-            margin: 0px;
-            padding: 0;
-        }
-        i:hover {
-            transform: scale(1.5);
-        }
-        .menuheader {
-            margin: 0px;
-            padding: 0px;
-        }
-        .iconsheader {
-            display: flex;
-            justify-content: flex-start;
-            margin: 0px;
-        }
-        .data {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .body-contact {
-            margin: 0 auto;
-            padding: 0 px;
-            border: 0px;
-            height: 100vh;
-            background-image: url('img/background.jpg');
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-        }
-        .icons {
-            margin-left: 10px;
-        }
-    }
     /* contact page  */
     
     .body-contact {
@@ -212,4 +178,55 @@
     
     .three {
         grid-row-end: span 1;
+    }
+    
+    @media (max-width:650px) {
+        .main {
+            margin: 10px;
+        }
+        .header {
+            display: flex;
+            justify-content: center;
+            margin: 0px;
+            padding: 0;
+        }
+        .menuheader {
+            margin: 0px;
+            padding: 0px;
+        }
+        .menuheader a {
+            margin: 0px;
+            padding: 0px;
+            max-height: auto;
+        }
+        .menuheader img {
+            width: 60px;
+            height: 65px;
+            margin: 0px;
+        }
+        .iconsheader {
+            display: flex;
+            justify-content: flex-start;
+            margin: 0px;
+        }
+        .data {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .icons {
+            margin-left: 10px;
+        }
+        .data-contact {
+            transform: rotate(0);
+        }
+        .data-project {
+            overflow: auto;
+        }
+        #pictureprofile {
+            width: 100px;
+            height: 200px;
+            border-radius: 50%;
+        }
     }
