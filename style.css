@@ -8,6 +8,7 @@
         background-position: center;
         background-size: cover;
         background-attachment: fixed;
+        overflow: hidden;
     }
     
     html,
@@ -130,6 +131,7 @@
         background-position: center;
         background-size: cover;
         background-attachment: fixed;
+        overflow: hidden;
     }
     
     .main-contact {
@@ -153,8 +155,10 @@
         height: auto;
         background-image: url('img/project-background.jpg');
         background-repeat: no-repeat;
-        background-position: 100%;
+        background-position: center;
         background-size: cover;
+        background-attachment: fixed;
+        overflow: hidden;
     }
     
     .data-project {
