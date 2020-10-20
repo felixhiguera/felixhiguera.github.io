@@ -123,7 +123,7 @@
     
     .body-contact {
         margin: 0 auto;
-        padding: 0 px;
+        padding: 0px;
         border: 0px;
         height: 100vh;
         background-image: url('img/contact-background.jpg');
@@ -158,7 +158,6 @@
         background-position: center;
         background-size: cover;
         background-attachment: fixed;
-        overflow: hidden;
     }
     
     .data-project {
